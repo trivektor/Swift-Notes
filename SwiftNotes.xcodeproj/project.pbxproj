@@ -12,6 +12,8 @@
 		B5A269FE223CB5880034362E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A269FC223CB5880034362E /* Main.storyboard */; };
 		B5A26A00223CB58B0034362E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A269FF223CB58B0034362E /* Assets.xcassets */; };
 		B5A26A03223CB58B0034362E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A26A01223CB58B0034362E /* LaunchScreen.storyboard */; };
+		B5A26A0B223CB7FF0034362E /* NotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A26A0A223CB7FF0034362E /* NotesController.swift */; };
+		B5A26A0D22435D830034362E /* ComposeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A26A0C22435D830034362E /* ComposeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		B5A269FF223CB58B0034362E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5A26A02223CB58B0034362E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5A26A04223CB58B0034362E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5A26A0A223CB7FF0034362E /* NotesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesController.swift; sourceTree = "<group>"; };
+		B5A26A0C22435D830034362E /* ComposeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				B5A269FF223CB58B0034362E /* Assets.xcassets */,
 				B5A26A01223CB58B0034362E /* LaunchScreen.storyboard */,
 				B5A26A04223CB58B0034362E /* Info.plist */,
+				B5A26A0A223CB7FF0034362E /* NotesController.swift */,
+				B5A26A0C22435D830034362E /* ComposeController.swift */,
 			);
 			path = SwiftNotes;
 			sourceTree = "<group>";
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5A26A0D22435D830034362E /* ComposeController.swift in Sources */,
 				B5A269FB223CB5880034362E /* ViewController.swift in Sources */,
+				B5A26A0B223CB7FF0034362E /* NotesController.swift in Sources */,
 				B5A269F9223CB5880034362E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
