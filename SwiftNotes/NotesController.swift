@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import FontAwesome_swift
 
 class NotesController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var itemsToLoad : [String] = [];
@@ -18,11 +19,15 @@ class NotesController: UIViewController, UITableViewDataSource, UITableViewDeleg
         itemsToLoad.append(contentsOf: ["One", "Two", "Three", "Four", "Five"])
         self.title = "Notes"
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(
-            title: "+",
+            title: String.fontAwesomeIcon(name: .edit),
             style: .done,
             target: self,
             action: #selector(compose)
         )
+        self.navigationItem.rightBarButtonItem?.setTitleTextAttributes([
+            NSAttributedString.Key.font: UIFont.fontAwesome(ofSize: 16, style: .solid),
+            NSAttributedString.Key.foregroundColor: UIColor.black
+        ], for: UIControl.State.normal)
     }
     
     @objc public func compose() {
