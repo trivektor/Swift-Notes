@@ -7,32 +7,76 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42C5606C32851777F8982AD3A13E1B48 /* Pods-SwiftNotes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F304DFAA0EB883AF105EC911C054A4 /* Pods-SwiftNotes-dummy.m */; };
-		4E1DC2A0F4D3BECF823D5107A021A209 /* FontAwesomeSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2B228BFD5DE71055A2E5CDA2784D9A /* FontAwesomeSegmentedControl.swift */; };
-		5ABF42EE4F25C7CF5594C895CADAA374 /* FontAwesomeTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08427C3E82CF7D028CA4B03B90992792 /* FontAwesomeTabBarItem.swift */; };
-		68BAC7962A168D4583274C0DD9325578 /* FontAwesome.swift.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6C625271E874919E78ECBC6FA98EB527 /* FontAwesome.swift.bundle */; };
+		0A263CAD47D541BEEF3B4F0928D3E209 /* NetworkTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E2596E502C3FFE0CB9C793796AEEB8 /* NetworkTransport.swift */; };
+		0E867EB8986044D6C07318B51083928E /* GraphQLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307325C2F0500369B24FE971D243713E /* GraphQLResponse.swift */; };
+		0FB82E5A3B96DD8FB47E0963374E87B7 /* Apollo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5E05ACC7CF04E3C855F2EE09AD5F090 /* Apollo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12073714D4B9A5A4DDEEAC70E95598ED /* check-and-run-apollo-cli.sh in Resources */ = {isa = PBXBuildFile; fileRef = 7F9B6C235A1FB785096B927F21182353 /* check-and-run-apollo-cli.sh */; };
+		1FB3D4DA729953FAE2C901079A073271 /* GraphQLDependencyTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BC613E0EE33A19531E9127DA0D64B /* GraphQLDependencyTracker.swift */; };
+		2287431572FF0AE49B0F6C039CB4BD0B /* GraphQLExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40970153BE6131BD0CDBBFEE62FACCF /* GraphQLExecutor.swift */; };
+		23043DD7316BB115E92A72E344356466 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ADCF49B33012E6199E3BB4F551CD4F /* Result.swift */; };
+		312D2EC702F4F05036D19263FC08D83B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1993BC6F997D4264B0F183602B0FF75D /* Foundation.framework */; };
+		3670EE6B064E44B4B1EEA64F30615045 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A06EDDFBA76847C4DD7F1D37B3AF45 /* Utilities.swift */; };
+		385944ED75FC3D88B5326FE40191CDF1 /* ApolloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4774BB7026B36D1BB575C353C73CC0 /* ApolloClient.swift */; };
+		38BDB523D585551104060370E27B30D5 /* GraphQLSelectionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01108E3D57E5C99BEA007EE1C759D8F8 /* GraphQLSelectionSet.swift */; };
+		456A382E93DA39385A01BE5767D8C919 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C1ECCA6C2386F45B15E33135D6E43 /* JSON.swift */; };
+		4665A449B5253A5B7A1AA9AC10A9FC3C /* GraphQLResultAccumulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03754D969A87B6AA465D6CAF9FECC4A /* GraphQLResultAccumulator.swift */; };
+		471A43A3FEB09F4AEE501F6DEE6E322F /* GraphQLResultNormalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418710974F8C8E7DECBE0FE08CB90F78 /* GraphQLResultNormalizer.swift */; };
+		4E1DC2A0F4D3BECF823D5107A021A209 /* FontAwesomeSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA3329FDAA87069E7F3FAFBE050A5EC /* FontAwesomeSegmentedControl.swift */; };
+		5ABF42EE4F25C7CF5594C895CADAA374 /* FontAwesomeTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3333DB783D75635DBD97F18F1F2366 /* FontAwesomeTabBarItem.swift */; };
+		5AC7A4A7EAF0BA1CA39CB46802C59262 /* JSONSerializationFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281DEB69F6C0081708F73A1A52578299 /* JSONSerializationFormat.swift */; };
+		5DD508B84F7DEA99B791CB2E17CF5EB9 /* Apollo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FC78AF43C15A6EDFA9FB374FF6A1FC /* Apollo-dummy.m */; };
+		68BAC7962A168D4583274C0DD9325578 /* FontAwesome.swift.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0306D4536411AB21A8288C894D89AB35 /* FontAwesome.swift.bundle */; };
 		6966EC261F028D75F78DEF17C858A521 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1993BC6F997D4264B0F183602B0FF75D /* Foundation.framework */; };
-		69D5CDC54257DAFD272B15BFDBB64137 /* Pods-SwiftNotes-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CBB508A96B6A457C1F58ADE9BD218F30 /* Pods-SwiftNotes-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		70B81B938724ACD63F905A070523E07C /* Font Awesome 5 Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = F6826E64981ADD0C000622E61A911BCE /* Font Awesome 5 Free-Solid-900.otf */; };
+		70B81B938724ACD63F905A070523E07C /* Font Awesome 5 Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 00EDD520922F650CFA5423C50A7C4E93 /* Font Awesome 5 Free-Solid-900.otf */; };
 		719239F98C40877381F360A49CD2D03B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E0CB9B90F82AAA0C603418D109F062E /* UIKit.framework */; };
-		7199F92FBB50BD74ECCC4BFD95B760CF /* FontAwesome.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69EEB0664193D6AC14E4274B45E4FC77 /* FontAwesome.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7199F92FBB50BD74ECCC4BFD95B760CF /* FontAwesome.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB69A0D701EE5D4243D7C99C674A3963 /* FontAwesome.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74A35F1A11B897835F7A78102B0DDBDE /* GraphQLSelectionSetMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9EA54AE04E3D54D746AF1F329377D0 /* GraphQLSelectionSetMapper.swift */; };
 		77501D15CE379488451751D4E93E7599 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4DEBF466AB57611444A7988F05243D5 /* CoreText.framework */; };
-		8B4CF31DB605A99A34A02647DED50273 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1993BC6F997D4264B0F183602B0FF75D /* Foundation.framework */; };
-		9710F52B5029F72C33E66A2BE523FBFE /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB52F40D458EA130E5399130F64368DB /* Enum.swift */; };
-		A1727F35438559AA201A29E0E05E3F71 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212708CD13E999CE921CF0F4159BAF13 /* FontAwesome.swift */; };
-		A61D473E7CD89198C254BC28E43B90EA /* FontAwesomeImageRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DD6C3C988B717D0F51D3C367932F56 /* FontAwesomeImageRepresentable.swift */; };
-		B089595008E27C42B2803DA3F85287D1 /* FontAwesomeStateRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D7DD39488E5DF6A74FD2DFAAF15056 /* FontAwesomeStateRequirement.swift */; };
-		B60F1F21A9EE397ABCA9180C864AFFC7 /* FontAwesomeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBE9475E603550789CD4EDB306A821 /* FontAwesomeImageView.swift */; };
-		B9F8268815C8721C771D77B6DA8719EB /* FontAwesomeBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B3E9E2BD61D74A6B939F512FD6EC58 /* FontAwesomeBarButtonItem.swift */; };
-		BBFCB8D855362DB460C30CC579EBE55D /* FontAwesome.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58595DBC6B3ED3E5984A00C5DE469646 /* FontAwesome.swift-dummy.m */; };
-		C9AC4ECA13D10670558E4CEB20318670 /* FontAwesomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD85806CE6463C73FE78008CCFDA777 /* FontAwesomeView.swift */; };
-		D28A7A864BAD82F9F7EB2E84B03D3AEB /* Font Awesome 5 Free-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = BB200D8E8B3C0149CCB382D176623C81 /* Font Awesome 5 Free-Regular-400.otf */; };
-		ED8F34B2501F5D709685F94BB0EDBBFB /* FontAwesomeTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A63DB8B4787A91753D77E17BF34C9DA /* FontAwesomeTextRepresentable.swift */; };
-		EEA7315A43EF2F4DAF7B8E1B5AE383AA /* FontAwesomeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C081A89DEF62C25996CBA497CAE86F77 /* FontAwesomeExtension.swift */; };
-		EF96B616BE75A442019963B01D73D91C /* Font Awesome 5 Brands-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = C6916630DC98C8227230286E4AB17596 /* Font Awesome 5 Brands-Regular-400.otf */; };
+		7BCEDC9453AEC1FA6E38EE01726B6332 /* GraphQLResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC062E5FDD44F1036FB140286E9D60 /* GraphQLResult.swift */; };
+		7CD488AFDA1020EFEB695E3280AB093F /* Collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71AE24B7E4E1F1C780271D2D6F7FDFD /* Collections.swift */; };
+		80DDDF4552F2B9C7AD3D1D7832E7A5D7 /* Pods-SwiftNotes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F304DFAA0EB883AF105EC911C054A4 /* Pods-SwiftNotes-dummy.m */; };
+		83010A493C118B36DDDA11944B8D01C4 /* JSONStandardTypeConversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF2B344D4E62EFA4128C52BB82F3484 /* JSONStandardTypeConversions.swift */; };
+		867265AD7B942722347BBEF97E90EF0C /* NormalizedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6BFEFA71428927E6314F9310668B62 /* NormalizedCache.swift */; };
+		8B3E46B6F346E77C92A29EBA208D9C1C /* ApolloStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CECCC48826E2413A7FF513EC6AB2462 /* ApolloStore.swift */; };
+		93CFC381C425290D86AE4B7C9BC2F585 /* Locking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFF902961E9D8272B65C6713CA81922 /* Locking.swift */; };
+		9710F52B5029F72C33E66A2BE523FBFE /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF707FC24A0555C1948A15E022D5BD2 /* Enum.swift */; };
+		9CBED915663B53A1C27FD1BBC262BE4B /* Pods-SwiftNotes-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CBB508A96B6A457C1F58ADE9BD218F30 /* Pods-SwiftNotes-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E2CA3A71CADD07B1C58CC14B54C5A7D /* ResultOrPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC2D95C0E7A3E2BE3125AA224493ED2 /* ResultOrPromise.swift */; };
+		A1727F35438559AA201A29E0E05E3F71 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47680ACED2BD9B1C5D320A0E8624A3C6 /* FontAwesome.swift */; };
+		A61D473E7CD89198C254BC28E43B90EA /* FontAwesomeImageRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF2165995F04C57E33E102925D3E28 /* FontAwesomeImageRepresentable.swift */; };
+		A6483097FA7747F4DCFFB7BCB8425596 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C98E27881A3FA02FE7B418744A9BBDD /* Promise.swift */; };
+		A715063AD164380F8F2BBE740A5AEEA4 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068A81A82A52F64D43836F39BF21C57 /* DataLoader.swift */; };
+		B089595008E27C42B2803DA3F85287D1 /* FontAwesomeStateRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561DA9E456E3B8F6BC2F858E660E706D /* FontAwesomeStateRequirement.swift */; };
+		B60F1F21A9EE397ABCA9180C864AFFC7 /* FontAwesomeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F851EA560EA00F7A6DFAC45C6393513 /* FontAwesomeImageView.swift */; };
+		B774D1A2F7279E5A67FDEA48D94B174E /* GraphQLQueryWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E22F6BF0AF84E90FDD9D69265E17136 /* GraphQLQueryWatcher.swift */; };
+		B9F8268815C8721C771D77B6DA8719EB /* FontAwesomeBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95CB7FCEBBF6A563B37E3C310AE30B3 /* FontAwesomeBarButtonItem.swift */; };
+		BBFCB8D855362DB460C30CC579EBE55D /* FontAwesome.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA48F459B109805EA478636BBC9269A /* FontAwesome.swift-dummy.m */; };
+		C9AC4ECA13D10670558E4CEB20318670 /* FontAwesomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E4496BBEB76BD1BF0B7486EF316029 /* FontAwesomeView.swift */; };
+		CAE5AA92A2F1D444150B5538E34A4548 /* RecordSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C4813F2A1015543B385C2F65C69A02 /* RecordSet.swift */; };
+		D28A7A864BAD82F9F7EB2E84B03D3AEB /* Font Awesome 5 Free-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = F5435D04435A6F839B8F4EF8A7373705 /* Font Awesome 5 Free-Regular-400.otf */; };
+		D9055B8383E70143C5C4893F81F4CC10 /* GraphQLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20DCD725EC5EA9352D03E7B912068E7 /* GraphQLError.swift */; };
+		DDAFDB8E73570BC455803B745986078E /* GraphQLInputValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19492D639380BCEA03302E373B7CA0A /* GraphQLInputValue.swift */; };
+		DFBE29E8C7B0CA46C67B5EE471C14345 /* AsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38DB5EAF29441B1E19EC82A9C74F77 /* AsynchronousOperation.swift */; };
+		ED8F34B2501F5D709685F94BB0EDBBFB /* FontAwesomeTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D4A8C298181FA8A47058349D95CCF9 /* FontAwesomeTextRepresentable.swift */; };
+		EEA7315A43EF2F4DAF7B8E1B5AE383AA /* FontAwesomeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF089F5CB668B1759D349FB5D31195 /* FontAwesomeExtension.swift */; };
+		EEF89970001325E997702F644431B726 /* GraphQLOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296F54877DB00F0D88083F160AECF8E5 /* GraphQLOperation.swift */; };
+		EF96B616BE75A442019963B01D73D91C /* Font Awesome 5 Brands-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC49F1379C90088515E6B02A4B1F277C /* Font Awesome 5 Brands-Regular-400.otf */; };
+		F47B1CF7A84B9AC95BE82B85FCD51875 /* check-and-run-apollo-codegen.sh in Resources */ = {isa = PBXBuildFile; fileRef = 689EFE0E91D3A3B732E548C140BC5130 /* check-and-run-apollo-codegen.sh */; };
+		F4C8613E83560E094C4709E013BD8D5B /* GraphQLResponseGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000FDC95E4299037212629DA8DAD190 /* GraphQLResponseGenerator.swift */; };
+		F553ED8318A340D723D4F360BF6E9407 /* InMemoryNormalizedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD00B85A69F394CFEA0D392D74D8DAE /* InMemoryNormalizedCache.swift */; };
+		FB119566F6BBE1F02A1264D948729013 /* HTTPNetworkTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2FB8CED9C3452A75C05F1CF271F5E2 /* HTTPNetworkTransport.swift */; };
+		FCD5ED3014B6531EC4C46A4E88890278 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1993BC6F997D4264B0F183602B0FF75D /* Foundation.framework */; };
+		FFD45FA7235213360F8FFD2193E6673A /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9744A9F07E937FD24482CEC4F5CA431 /* Record.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		24567154531DECF9BB92DE93EBE422A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66F7B49B8DD95A2761EC3942163114CA;
+			remoteInfo = Apollo;
+		};
 		452402FFF162D089FBA2F3A1D806D4C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -40,7 +84,7 @@
 			remoteGlobalIDString = 46FC65AF474F3F02F99ABF2F8F1CE850;
 			remoteInfo = "FontAwesome.swift-FontAwesome.swift";
 		};
-		8F1954A197925354FC6747278DE2AF20 /* PBXContainerItemProxy */ = {
+		90F1E62A3D85B35DFBAEC1551B5C0A34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -50,46 +94,95 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00EDD520922F650CFA5423C50A7C4E93 /* Font Awesome 5 Free-Solid-900.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Font Awesome 5 Free-Solid-900.otf"; path = "FontAwesome/Font Awesome 5 Free-Solid-900.otf"; sourceTree = "<group>"; };
+		01108E3D57E5C99BEA007EE1C759D8F8 /* GraphQLSelectionSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLSelectionSet.swift; path = Sources/Apollo/GraphQLSelectionSet.swift; sourceTree = "<group>"; };
+		0306D4536411AB21A8288C894D89AB35 /* FontAwesome.swift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FontAwesome.swift.bundle; path = "FontAwesome.swift-FontAwesome.swift.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05D38804678C7358EBDFFD9F02607CF7 /* Pods-SwiftNotes-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftNotes-frameworks.sh"; sourceTree = "<group>"; };
 		06F304DFAA0EB883AF105EC911C054A4 /* Pods-SwiftNotes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftNotes-dummy.m"; sourceTree = "<group>"; };
-		08427C3E82CF7D028CA4B03B90992792 /* FontAwesomeTabBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeTabBarItem.swift; path = FontAwesome/FontAwesomeTabBarItem.swift; sourceTree = "<group>"; };
-		095F856B8AA4AEEA5C1D98FC5A749993 /* FontAwesome.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FontAwesome.swift-Info.plist"; sourceTree = "<group>"; };
 		09BEC3D4D90E11E3EC5036E67E3EA77F /* Pods-SwiftNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftNotes.debug.xcconfig"; sourceTree = "<group>"; };
+		0FDF2165995F04C57E33E102925D3E28 /* FontAwesomeImageRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeImageRepresentable.swift; path = FontAwesome/FontAwesomeImageRepresentable.swift; sourceTree = "<group>"; };
+		0FF2B344D4E62EFA4128C52BB82F3484 /* JSONStandardTypeConversions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONStandardTypeConversions.swift; path = Sources/Apollo/JSONStandardTypeConversions.swift; sourceTree = "<group>"; };
 		1993BC6F997D4264B0F183602B0FF75D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		1E2B228BFD5DE71055A2E5CDA2784D9A /* FontAwesomeSegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeSegmentedControl.swift; path = FontAwesome/FontAwesomeSegmentedControl.swift; sourceTree = "<group>"; };
-		212708CD13E999CE921CF0F4159BAF13 /* FontAwesome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = FontAwesome/FontAwesome.swift; sourceTree = "<group>"; };
+		1CECCC48826E2413A7FF513EC6AB2462 /* ApolloStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApolloStore.swift; path = Sources/Apollo/ApolloStore.swift; sourceTree = "<group>"; };
+		1D42C2B987D53E106972848BCD603280 /* Apollo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Apollo.xcconfig; sourceTree = "<group>"; };
+		1D98935C096D83FBD68A456D67176EE7 /* FontAwesome_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FontAwesome_swift.framework; path = FontAwesome.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DC2D95C0E7A3E2BE3125AA224493ED2 /* ResultOrPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultOrPromise.swift; path = Sources/Apollo/ResultOrPromise.swift; sourceTree = "<group>"; };
+		22C4813F2A1015543B385C2F65C69A02 /* RecordSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordSet.swift; path = Sources/Apollo/RecordSet.swift; sourceTree = "<group>"; };
+		281DEB69F6C0081708F73A1A52578299 /* JSONSerializationFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONSerializationFormat.swift; path = Sources/Apollo/JSONSerializationFormat.swift; sourceTree = "<group>"; };
+		296F54877DB00F0D88083F160AECF8E5 /* GraphQLOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLOperation.swift; path = Sources/Apollo/GraphQLOperation.swift; sourceTree = "<group>"; };
 		2DFB75288A5C678F81C21CE0B979DA89 /* Pods-SwiftNotes-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftNotes-Info.plist"; sourceTree = "<group>"; };
+		2E22F6BF0AF84E90FDD9D69265E17136 /* GraphQLQueryWatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLQueryWatcher.swift; path = Sources/Apollo/GraphQLQueryWatcher.swift; sourceTree = "<group>"; };
+		307325C2F0500369B24FE971D243713E /* GraphQLResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLResponse.swift; path = Sources/Apollo/GraphQLResponse.swift; sourceTree = "<group>"; };
 		30B1D137A62A99E28B3FC7032D586D8E /* Pods-SwiftNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftNotes.release.xcconfig"; sourceTree = "<group>"; };
-		3357207A5C625A44DD4957912922E914 /* FontAwesome.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FontAwesome.swift.modulemap; sourceTree = "<group>"; };
-		3A63DB8B4787A91753D77E17BF34C9DA /* FontAwesomeTextRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeTextRepresentable.swift; path = FontAwesome/FontAwesomeTextRepresentable.swift; sourceTree = "<group>"; };
+		3970645B34C59AEF035C51416A526E2C /* Apollo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Apollo.modulemap; sourceTree = "<group>"; };
+		3CE3322DBAE3585C1F8DD69DA78B7826 /* Pods_SwiftNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftNotes.framework; path = "Pods-SwiftNotes.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B7C941346E917DC55C059DA126AEAA /* Pods-SwiftNotes.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftNotes.modulemap"; sourceTree = "<group>"; };
-		58595DBC6B3ED3E5984A00C5DE469646 /* FontAwesome.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontAwesome.swift-dummy.m"; sourceTree = "<group>"; };
-		61D7DD39488E5DF6A74FD2DFAAF15056 /* FontAwesomeStateRequirement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeStateRequirement.swift; path = FontAwesome/FontAwesomeStateRequirement.swift; sourceTree = "<group>"; };
-		65C40FE4987AD051670243FBA407945B /* ResourceBundle-FontAwesome.swift-FontAwesome.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FontAwesome.swift-FontAwesome.swift-Info.plist"; sourceTree = "<group>"; };
-		69EEB0664193D6AC14E4274B45E4FC77 /* FontAwesome.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-umbrella.h"; sourceTree = "<group>"; };
-		6C625271E874919E78ECBC6FA98EB527 /* FontAwesome.swift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FontAwesome.swift.bundle; path = "FontAwesome.swift-FontAwesome.swift.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F94406FEEB7E6DE0945FD874C5D55C4 /* FontAwesome.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontAwesome.swift.xcconfig; sourceTree = "<group>"; };
-		7FD56FB0E71570429ABD4ED970B6BCC6 /* FontAwesome_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FontAwesome_swift.framework; path = FontAwesome.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		802CC5F0CF252AA3B491F9679B2E68B6 /* Pods_SwiftNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftNotes.framework; path = "Pods-SwiftNotes.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40CF089F5CB668B1759D349FB5D31195 /* FontAwesomeExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeExtension.swift; path = FontAwesome/FontAwesomeExtension.swift; sourceTree = "<group>"; };
+		418710974F8C8E7DECBE0FE08CB90F78 /* GraphQLResultNormalizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLResultNormalizer.swift; path = Sources/Apollo/GraphQLResultNormalizer.swift; sourceTree = "<group>"; };
+		47680ACED2BD9B1C5D320A0E8624A3C6 /* FontAwesome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = FontAwesome/FontAwesome.swift; sourceTree = "<group>"; };
+		4EFF902961E9D8272B65C6713CA81922 /* Locking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Locking.swift; path = Sources/Apollo/Locking.swift; sourceTree = "<group>"; };
+		52115A23FD348C2685578106033B8111 /* FontAwesome.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-prefix.pch"; sourceTree = "<group>"; };
+		561DA9E456E3B8F6BC2F858E660E706D /* FontAwesomeStateRequirement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeStateRequirement.swift; path = FontAwesome/FontAwesomeStateRequirement.swift; sourceTree = "<group>"; };
+		5C98E27881A3FA02FE7B418744A9BBDD /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/Apollo/Promise.swift; sourceTree = "<group>"; };
+		5DD00B85A69F394CFEA0D392D74D8DAE /* InMemoryNormalizedCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InMemoryNormalizedCache.swift; path = Sources/Apollo/InMemoryNormalizedCache.swift; sourceTree = "<group>"; };
+		638B587849E138D315DDF6A24A6B2A13 /* Apollo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Apollo.framework; path = Apollo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		673BC613E0EE33A19531E9127DA0D64B /* GraphQLDependencyTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLDependencyTracker.swift; path = Sources/Apollo/GraphQLDependencyTracker.swift; sourceTree = "<group>"; };
+		689EFE0E91D3A3B732E548C140BC5130 /* check-and-run-apollo-codegen.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; name = "check-and-run-apollo-codegen.sh"; path = "scripts/check-and-run-apollo-codegen.sh"; sourceTree = "<group>"; };
+		6C348F23DE0670348B53FC1DA95EB90F /* FontAwesome.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FontAwesome.swift-Info.plist"; sourceTree = "<group>"; };
+		6C9EA54AE04E3D54D746AF1F329377D0 /* GraphQLSelectionSetMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLSelectionSetMapper.swift; path = Sources/Apollo/GraphQLSelectionSetMapper.swift; sourceTree = "<group>"; };
+		7AF707FC24A0555C1948A15E022D5BD2 /* Enum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enum.swift; path = FontAwesome/Enum.swift; sourceTree = "<group>"; };
+		7B9F00F22494AFA93442807161CE7986 /* ResourceBundle-FontAwesome.swift-FontAwesome.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FontAwesome.swift-FontAwesome.swift-Info.plist"; sourceTree = "<group>"; };
+		7CA3329FDAA87069E7F3FAFBE050A5EC /* FontAwesomeSegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeSegmentedControl.swift; path = FontAwesome/FontAwesomeSegmentedControl.swift; sourceTree = "<group>"; };
+		7F38DB5EAF29441B1E19EC82A9C74F77 /* AsynchronousOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsynchronousOperation.swift; path = Sources/Apollo/AsynchronousOperation.swift; sourceTree = "<group>"; };
+		7F851EA560EA00F7A6DFAC45C6393513 /* FontAwesomeImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeImageView.swift; path = FontAwesome/FontAwesomeImageView.swift; sourceTree = "<group>"; };
+		7F9B6C235A1FB785096B927F21182353 /* check-and-run-apollo-cli.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; name = "check-and-run-apollo-cli.sh"; path = "scripts/check-and-run-apollo-cli.sh"; sourceTree = "<group>"; };
+		8068A81A82A52F64D43836F39BF21C57 /* DataLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataLoader.swift; path = Sources/Apollo/DataLoader.swift; sourceTree = "<group>"; };
+		865D30EADC711059BD2F1383CD150AA3 /* Apollo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Apollo-Info.plist"; sourceTree = "<group>"; };
+		86EF86075E0B8B38BFB776DBC7FBB385 /* FontAwesome.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FontAwesome.swift.modulemap; sourceTree = "<group>"; };
+		8B3333DB783D75635DBD97F18F1F2366 /* FontAwesomeTabBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeTabBarItem.swift; path = FontAwesome/FontAwesomeTabBarItem.swift; sourceTree = "<group>"; };
+		8F2FB8CED9C3452A75C05F1CF271F5E2 /* HTTPNetworkTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPNetworkTransport.swift; path = Sources/Apollo/HTTPNetworkTransport.swift; sourceTree = "<group>"; };
+		95FC78AF43C15A6EDFA9FB374FF6A1FC /* Apollo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Apollo-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E0CB9B90F82AAA0C603418D109F062E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		A1379B346A330C2FFBDC80B74077D84A /* Pods-SwiftNotes-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftNotes-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A59882DC743062D7184676137CD36B73 /* FontAwesome.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-prefix.pch"; sourceTree = "<group>"; };
-		AB52F40D458EA130E5399130F64368DB /* Enum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enum.swift; path = FontAwesome/Enum.swift; sourceTree = "<group>"; };
-		BB200D8E8B3C0149CCB382D176623C81 /* Font Awesome 5 Free-Regular-400.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Font Awesome 5 Free-Regular-400.otf"; path = "FontAwesome/Font Awesome 5 Free-Regular-400.otf"; sourceTree = "<group>"; };
-		C081A89DEF62C25996CBA497CAE86F77 /* FontAwesomeExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeExtension.swift; path = FontAwesome/FontAwesomeExtension.swift; sourceTree = "<group>"; };
+		A71AE24B7E4E1F1C780271D2D6F7FDFD /* Collections.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collections.swift; path = Sources/Apollo/Collections.swift; sourceTree = "<group>"; };
+		A9744A9F07E937FD24482CEC4F5CA431 /* Record.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Record.swift; path = Sources/Apollo/Record.swift; sourceTree = "<group>"; };
+		AC4774BB7026B36D1BB575C353C73CC0 /* ApolloClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApolloClient.swift; path = Sources/Apollo/ApolloClient.swift; sourceTree = "<group>"; };
+		B03754D969A87B6AA465D6CAF9FECC4A /* GraphQLResultAccumulator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLResultAccumulator.swift; path = Sources/Apollo/GraphQLResultAccumulator.swift; sourceTree = "<group>"; };
+		B0B62A638BAAB9AF8215248017BE01B4 /* FontAwesome.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontAwesome.swift.xcconfig; sourceTree = "<group>"; };
+		B8E2596E502C3FFE0CB9C793796AEEB8 /* NetworkTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkTransport.swift; path = Sources/Apollo/NetworkTransport.swift; sourceTree = "<group>"; };
+		B95CB7FCEBBF6A563B37E3C310AE30B3 /* FontAwesomeBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeBarButtonItem.swift; path = FontAwesome/FontAwesomeBarButtonItem.swift; sourceTree = "<group>"; };
+		BE6BFEFA71428927E6314F9310668B62 /* NormalizedCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NormalizedCache.swift; path = Sources/Apollo/NormalizedCache.swift; sourceTree = "<group>"; };
+		C000FDC95E4299037212629DA8DAD190 /* GraphQLResponseGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLResponseGenerator.swift; path = Sources/Apollo/GraphQLResponseGenerator.swift; sourceTree = "<group>"; };
+		C27C1ECCA6C2386F45B15E33135D6E43 /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Sources/Apollo/JSON.swift; sourceTree = "<group>"; };
 		C4DEBF466AB57611444A7988F05243D5 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
-		C6916630DC98C8227230286E4AB17596 /* Font Awesome 5 Brands-Regular-400.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Font Awesome 5 Brands-Regular-400.otf"; path = "FontAwesome/Font Awesome 5 Brands-Regular-400.otf"; sourceTree = "<group>"; };
-		C8DD6C3C988B717D0F51D3C367932F56 /* FontAwesomeImageRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeImageRepresentable.swift; path = FontAwesome/FontAwesomeImageRepresentable.swift; sourceTree = "<group>"; };
+		C7A06EDDFBA76847C4DD7F1D37B3AF45 /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Sources/Apollo/Utilities.swift; sourceTree = "<group>"; };
+		C7E4496BBEB76BD1BF0B7486EF316029 /* FontAwesomeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeView.swift; path = FontAwesome/FontAwesomeView.swift; sourceTree = "<group>"; };
+		CB69A0D701EE5D4243D7C99C674A3963 /* FontAwesome.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-umbrella.h"; sourceTree = "<group>"; };
 		CBB508A96B6A457C1F58ADE9BD218F30 /* Pods-SwiftNotes-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftNotes-umbrella.h"; sourceTree = "<group>"; };
-		E1B3E9E2BD61D74A6B939F512FD6EC58 /* FontAwesomeBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeBarButtonItem.swift; path = FontAwesome/FontAwesomeBarButtonItem.swift; sourceTree = "<group>"; };
-		F5BBE9475E603550789CD4EDB306A821 /* FontAwesomeImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeImageView.swift; path = FontAwesome/FontAwesomeImageView.swift; sourceTree = "<group>"; };
-		F6826E64981ADD0C000622E61A911BCE /* Font Awesome 5 Free-Solid-900.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Font Awesome 5 Free-Solid-900.otf"; path = "FontAwesome/Font Awesome 5 Free-Solid-900.otf"; sourceTree = "<group>"; };
+		D5E05ACC7CF04E3C855F2EE09AD5F090 /* Apollo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apollo-umbrella.h"; sourceTree = "<group>"; };
+		D6D4A8C298181FA8A47058349D95CCF9 /* FontAwesomeTextRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeTextRepresentable.swift; path = FontAwesome/FontAwesomeTextRepresentable.swift; sourceTree = "<group>"; };
+		DC49F1379C90088515E6B02A4B1F277C /* Font Awesome 5 Brands-Regular-400.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Font Awesome 5 Brands-Regular-400.otf"; path = "FontAwesome/Font Awesome 5 Brands-Regular-400.otf"; sourceTree = "<group>"; };
+		DDBC062E5FDD44F1036FB140286E9D60 /* GraphQLResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLResult.swift; path = Sources/Apollo/GraphQLResult.swift; sourceTree = "<group>"; };
+		E0ADCF49B33012E6199E3BB4F551CD4F /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Apollo/Result.swift; sourceTree = "<group>"; };
+		E20DCD725EC5EA9352D03E7B912068E7 /* GraphQLError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLError.swift; path = Sources/Apollo/GraphQLError.swift; sourceTree = "<group>"; };
+		E40970153BE6131BD0CDBBFEE62FACCF /* GraphQLExecutor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLExecutor.swift; path = Sources/Apollo/GraphQLExecutor.swift; sourceTree = "<group>"; };
+		E93B38C52EA5435CE1037DC0392CA034 /* Apollo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apollo-prefix.pch"; sourceTree = "<group>"; };
+		ECA48F459B109805EA478636BBC9269A /* FontAwesome.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontAwesome.swift-dummy.m"; sourceTree = "<group>"; };
+		F19492D639380BCEA03302E373B7CA0A /* GraphQLInputValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLInputValue.swift; path = Sources/Apollo/GraphQLInputValue.swift; sourceTree = "<group>"; };
+		F5435D04435A6F839B8F4EF8A7373705 /* Font Awesome 5 Free-Regular-400.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Font Awesome 5 Free-Regular-400.otf"; path = "FontAwesome/Font Awesome 5 Free-Regular-400.otf"; sourceTree = "<group>"; };
 		FBE378ACAC6507FE94B35B89F63C0547 /* Pods-SwiftNotes-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftNotes-acknowledgements.plist"; sourceTree = "<group>"; };
-		FFD85806CE6463C73FE78008CCFDA777 /* FontAwesomeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeView.swift; path = FontAwesome/FontAwesomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		34D0D735CE88AD7B28513A584F2F1397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCD5ED3014B6531EC4C46A4E88890278 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63A41DD936AEE281B15AE9F35DA7FAB4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -107,11 +200,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F23E11470921C2D29764376A288911A8 /* Frameworks */ = {
+		EA9EC59E1E52038A8999F23132736850 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B4CF31DB605A99A34A02647DED50273 /* Foundation.framework in Frameworks */,
+				312D2EC702F4F05036D19263FC08D83B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +236,20 @@
 			path = "Target Support Files/Pods-SwiftNotes";
 			sourceTree = "<group>";
 		};
+		1E58CE49BE0256A8CC81FCBF30770E36 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3970645B34C59AEF035C51416A526E2C /* Apollo.modulemap */,
+				1D42C2B987D53E106972848BCD603280 /* Apollo.xcconfig */,
+				95FC78AF43C15A6EDFA9FB374FF6A1FC /* Apollo-dummy.m */,
+				865D30EADC711059BD2F1383CD150AA3 /* Apollo-Info.plist */,
+				E93B38C52EA5435CE1037DC0392CA034 /* Apollo-prefix.pch */,
+				D5E05ACC7CF04E3C855F2EE09AD5F090 /* Apollo-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Apollo";
+			sourceTree = "<group>";
+		};
 		221561B3CB24394F04FAAF572BCB087B /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,58 +260,99 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		4E2BFE0FC672FCA7CA36B1142D3875D7 /* Pods */ = {
+		2A376A775C025887A00AB84C3D1D3F97 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C99F98A5522FFD208F0EFCF96A35406C /* FontAwesome.swift */,
+				86EF86075E0B8B38BFB776DBC7FBB385 /* FontAwesome.swift.modulemap */,
+				B0B62A638BAAB9AF8215248017BE01B4 /* FontAwesome.swift.xcconfig */,
+				ECA48F459B109805EA478636BBC9269A /* FontAwesome.swift-dummy.m */,
+				6C348F23DE0670348B53FC1DA95EB90F /* FontAwesome.swift-Info.plist */,
+				52115A23FD348C2685578106033B8111 /* FontAwesome.swift-prefix.pch */,
+				CB69A0D701EE5D4243D7C99C674A3963 /* FontAwesome.swift-umbrella.h */,
+				7B9F00F22494AFA93442807161CE7986 /* ResourceBundle-FontAwesome.swift-FontAwesome.swift-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FontAwesome.swift";
+			sourceTree = "<group>";
+		};
+		3C631FE66577B9C0E2D2F8142FD7F7FD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AC4774BB7026B36D1BB575C353C73CC0 /* ApolloClient.swift */,
+				1CECCC48826E2413A7FF513EC6AB2462 /* ApolloStore.swift */,
+				7F38DB5EAF29441B1E19EC82A9C74F77 /* AsynchronousOperation.swift */,
+				A71AE24B7E4E1F1C780271D2D6F7FDFD /* Collections.swift */,
+				8068A81A82A52F64D43836F39BF21C57 /* DataLoader.swift */,
+				673BC613E0EE33A19531E9127DA0D64B /* GraphQLDependencyTracker.swift */,
+				E20DCD725EC5EA9352D03E7B912068E7 /* GraphQLError.swift */,
+				E40970153BE6131BD0CDBBFEE62FACCF /* GraphQLExecutor.swift */,
+				F19492D639380BCEA03302E373B7CA0A /* GraphQLInputValue.swift */,
+				296F54877DB00F0D88083F160AECF8E5 /* GraphQLOperation.swift */,
+				2E22F6BF0AF84E90FDD9D69265E17136 /* GraphQLQueryWatcher.swift */,
+				307325C2F0500369B24FE971D243713E /* GraphQLResponse.swift */,
+				C000FDC95E4299037212629DA8DAD190 /* GraphQLResponseGenerator.swift */,
+				DDBC062E5FDD44F1036FB140286E9D60 /* GraphQLResult.swift */,
+				B03754D969A87B6AA465D6CAF9FECC4A /* GraphQLResultAccumulator.swift */,
+				418710974F8C8E7DECBE0FE08CB90F78 /* GraphQLResultNormalizer.swift */,
+				01108E3D57E5C99BEA007EE1C759D8F8 /* GraphQLSelectionSet.swift */,
+				6C9EA54AE04E3D54D746AF1F329377D0 /* GraphQLSelectionSetMapper.swift */,
+				8F2FB8CED9C3452A75C05F1CF271F5E2 /* HTTPNetworkTransport.swift */,
+				5DD00B85A69F394CFEA0D392D74D8DAE /* InMemoryNormalizedCache.swift */,
+				C27C1ECCA6C2386F45B15E33135D6E43 /* JSON.swift */,
+				281DEB69F6C0081708F73A1A52578299 /* JSONSerializationFormat.swift */,
+				0FF2B344D4E62EFA4128C52BB82F3484 /* JSONStandardTypeConversions.swift */,
+				4EFF902961E9D8272B65C6713CA81922 /* Locking.swift */,
+				B8E2596E502C3FFE0CB9C793796AEEB8 /* NetworkTransport.swift */,
+				BE6BFEFA71428927E6314F9310668B62 /* NormalizedCache.swift */,
+				5C98E27881A3FA02FE7B418744A9BBDD /* Promise.swift */,
+				A9744A9F07E937FD24482CEC4F5CA431 /* Record.swift */,
+				22C4813F2A1015543B385C2F65C69A02 /* RecordSet.swift */,
+				E0ADCF49B33012E6199E3BB4F551CD4F /* Result.swift */,
+				1DC2D95C0E7A3E2BE3125AA224493ED2 /* ResultOrPromise.swift */,
+				C7A06EDDFBA76847C4DD7F1D37B3AF45 /* Utilities.swift */,
+				F052E6199DDF3E4B98A497D36E04BC5F /* Resources */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		40A6EDB9DAE229CFA807F26035035BDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				638B587849E138D315DDF6A24A6B2A13 /* Apollo.framework */,
+				0306D4536411AB21A8288C894D89AB35 /* FontAwesome.swift.bundle */,
+				1D98935C096D83FBD68A456D67176EE7 /* FontAwesome_swift.framework */,
+				3CE3322DBAE3585C1F8DD69DA78B7826 /* Pods_SwiftNotes.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A59EC1F48FCA5DAAC7EA3969622DC986 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD70281B32B36E4D7C7A14697C64E26F /* Apollo */,
+				D0AA2A45B52B88DD5C9ECD6561F7CF8F /* FontAwesome.swift */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		64F84B61BA254C56B02E9C051E6D8C13 /* Resources */ = {
+		A7CB319712E9CF527AEF75C5D0656823 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C6916630DC98C8227230286E4AB17596 /* Font Awesome 5 Brands-Regular-400.otf */,
-				BB200D8E8B3C0149CCB382D176623C81 /* Font Awesome 5 Free-Regular-400.otf */,
-				F6826E64981ADD0C000622E61A911BCE /* Font Awesome 5 Free-Solid-900.otf */,
+				DC49F1379C90088515E6B02A4B1F277C /* Font Awesome 5 Brands-Regular-400.otf */,
+				F5435D04435A6F839B8F4EF8A7373705 /* Font Awesome 5 Free-Regular-400.otf */,
+				00EDD520922F650CFA5423C50A7C4E93 /* Font Awesome 5 Free-Solid-900.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		C99F98A5522FFD208F0EFCF96A35406C /* FontAwesome.swift */ = {
+		CD70281B32B36E4D7C7A14697C64E26F /* Apollo */ = {
 			isa = PBXGroup;
 			children = (
-				AB52F40D458EA130E5399130F64368DB /* Enum.swift */,
-				212708CD13E999CE921CF0F4159BAF13 /* FontAwesome.swift */,
-				E1B3E9E2BD61D74A6B939F512FD6EC58 /* FontAwesomeBarButtonItem.swift */,
-				C081A89DEF62C25996CBA497CAE86F77 /* FontAwesomeExtension.swift */,
-				C8DD6C3C988B717D0F51D3C367932F56 /* FontAwesomeImageRepresentable.swift */,
-				F5BBE9475E603550789CD4EDB306A821 /* FontAwesomeImageView.swift */,
-				1E2B228BFD5DE71055A2E5CDA2784D9A /* FontAwesomeSegmentedControl.swift */,
-				61D7DD39488E5DF6A74FD2DFAAF15056 /* FontAwesomeStateRequirement.swift */,
-				08427C3E82CF7D028CA4B03B90992792 /* FontAwesomeTabBarItem.swift */,
-				3A63DB8B4787A91753D77E17BF34C9DA /* FontAwesomeTextRepresentable.swift */,
-				FFD85806CE6463C73FE78008CCFDA777 /* FontAwesomeView.swift */,
-				64F84B61BA254C56B02E9C051E6D8C13 /* Resources */,
-				CE6BE692E8C557CF919294CD85FDC531 /* Support Files */,
+				3C631FE66577B9C0E2D2F8142FD7F7FD /* Core */,
+				1E58CE49BE0256A8CC81FCBF30770E36 /* Support Files */,
 			);
-			name = FontAwesome.swift;
-			path = FontAwesome.swift;
-			sourceTree = "<group>";
-		};
-		CE6BE692E8C557CF919294CD85FDC531 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3357207A5C625A44DD4957912922E914 /* FontAwesome.swift.modulemap */,
-				6F94406FEEB7E6DE0945FD874C5D55C4 /* FontAwesome.swift.xcconfig */,
-				58595DBC6B3ED3E5984A00C5DE469646 /* FontAwesome.swift-dummy.m */,
-				095F856B8AA4AEEA5C1D98FC5A749993 /* FontAwesome.swift-Info.plist */,
-				A59882DC743062D7184676137CD36B73 /* FontAwesome.swift-prefix.pch */,
-				69EEB0664193D6AC14E4274B45E4FC77 /* FontAwesome.swift-umbrella.h */,
-				65C40FE4987AD051670243FBA407945B /* ResourceBundle-FontAwesome.swift-FontAwesome.swift-Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/FontAwesome.swift";
+			name = Apollo;
+			path = Apollo;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -212,20 +360,31 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
-				4E2BFE0FC672FCA7CA36B1142D3875D7 /* Pods */,
-				DC1E5B2ABF35051560EE2A367FFD5C15 /* Products */,
+				A59EC1F48FCA5DAAC7EA3969622DC986 /* Pods */,
+				40A6EDB9DAE229CFA807F26035035BDA /* Products */,
 				DFAE511AB818121C6500EFF18BE859CE /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		DC1E5B2ABF35051560EE2A367FFD5C15 /* Products */ = {
+		D0AA2A45B52B88DD5C9ECD6561F7CF8F /* FontAwesome.swift */ = {
 			isa = PBXGroup;
 			children = (
-				6C625271E874919E78ECBC6FA98EB527 /* FontAwesome.swift.bundle */,
-				7FD56FB0E71570429ABD4ED970B6BCC6 /* FontAwesome_swift.framework */,
-				802CC5F0CF252AA3B491F9679B2E68B6 /* Pods_SwiftNotes.framework */,
+				7AF707FC24A0555C1948A15E022D5BD2 /* Enum.swift */,
+				47680ACED2BD9B1C5D320A0E8624A3C6 /* FontAwesome.swift */,
+				B95CB7FCEBBF6A563B37E3C310AE30B3 /* FontAwesomeBarButtonItem.swift */,
+				40CF089F5CB668B1759D349FB5D31195 /* FontAwesomeExtension.swift */,
+				0FDF2165995F04C57E33E102925D3E28 /* FontAwesomeImageRepresentable.swift */,
+				7F851EA560EA00F7A6DFAC45C6393513 /* FontAwesomeImageView.swift */,
+				7CA3329FDAA87069E7F3FAFBE050A5EC /* FontAwesomeSegmentedControl.swift */,
+				561DA9E456E3B8F6BC2F858E660E706D /* FontAwesomeStateRequirement.swift */,
+				8B3333DB783D75635DBD97F18F1F2366 /* FontAwesomeTabBarItem.swift */,
+				D6D4A8C298181FA8A47058349D95CCF9 /* FontAwesomeTextRepresentable.swift */,
+				C7E4496BBEB76BD1BF0B7486EF316029 /* FontAwesomeView.swift */,
+				A7CB319712E9CF527AEF75C5D0656823 /* Resources */,
+				2A376A775C025887A00AB84C3D1D3F97 /* Support Files */,
 			);
-			name = Products;
+			name = FontAwesome.swift;
+			path = FontAwesome.swift;
 			sourceTree = "<group>";
 		};
 		DFAE511AB818121C6500EFF18BE859CE /* Targets Support Files */ = {
@@ -234,6 +393,15 @@
 				1BC5DA2E71D52A3A4AE529A70CA632A1 /* Pods-SwiftNotes */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F052E6199DDF3E4B98A497D36E04BC5F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7F9B6C235A1FB785096B927F21182353 /* check-and-run-apollo-cli.sh */,
+				689EFE0E91D3A3B732E548C140BC5130 /* check-and-run-apollo-codegen.sh */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,11 +415,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF95525BBA71C51C7C7E374B15066503 /* Headers */ = {
+		9BAE09956C88DEEA9C0E6A69B507101C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69D5CDC54257DAFD272B15BFDBB64137 /* Pods-SwiftNotes-umbrella.h in Headers */,
+				0FB82E5A3B96DD8FB47E0963374E87B7 /* Apollo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE1CD4DD52F2A2F6D682C612473235F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CBED915663B53A1C27FD1BBC262BE4B /* Pods-SwiftNotes-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,26 +448,25 @@
 			);
 			name = "FontAwesome.swift-FontAwesome.swift";
 			productName = "FontAwesome.swift-FontAwesome.swift";
-			productReference = 6C625271E874919E78ECBC6FA98EB527 /* FontAwesome.swift.bundle */;
+			productReference = 0306D4536411AB21A8288C894D89AB35 /* FontAwesome.swift.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		99BC79330AF8E490CFAD302F0E52F8CC /* Pods-SwiftNotes */ = {
+		66F7B49B8DD95A2761EC3942163114CA /* Apollo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 91DA629AF7BB526037D140A3968658C3 /* Build configuration list for PBXNativeTarget "Pods-SwiftNotes" */;
+			buildConfigurationList = 343D63B6DB5A1E945176456AAC94CACE /* Build configuration list for PBXNativeTarget "Apollo" */;
 			buildPhases = (
-				DF95525BBA71C51C7C7E374B15066503 /* Headers */,
-				0F078357F25A8AEB54C992530542D861 /* Sources */,
-				F23E11470921C2D29764376A288911A8 /* Frameworks */,
-				2928DA9BF5CEECE2E3A1808DB48E4CCB /* Resources */,
+				9BAE09956C88DEEA9C0E6A69B507101C /* Headers */,
+				15E0BE80A78F22BF06D51B41A0FCF358 /* Sources */,
+				34D0D735CE88AD7B28513A584F2F1397 /* Frameworks */,
+				9444D1B7E61974C40BB0DDF9FAAECF38 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BBD3E7B1DD8277D7518F81623095AEAF /* PBXTargetDependency */,
 			);
-			name = "Pods-SwiftNotes";
-			productName = "Pods-SwiftNotes";
-			productReference = 802CC5F0CF252AA3B491F9679B2E68B6 /* Pods_SwiftNotes.framework */;
+			name = Apollo;
+			productName = Apollo;
+			productReference = 638B587849E138D315DDF6A24A6B2A13 /* Apollo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		ADD9F3DD47C12F0136E3ED7EE7141BA4 /* FontAwesome.swift */ = {
@@ -310,7 +485,27 @@
 			);
 			name = FontAwesome.swift;
 			productName = FontAwesome.swift;
-			productReference = 7FD56FB0E71570429ABD4ED970B6BCC6 /* FontAwesome_swift.framework */;
+			productReference = 1D98935C096D83FBD68A456D67176EE7 /* FontAwesome_swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EC91053E18045562490DA5C26ADD9AB2 /* Pods-SwiftNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BBC44137AE72EF9C1E83D6E8F64F18F /* Build configuration list for PBXNativeTarget "Pods-SwiftNotes" */;
+			buildPhases = (
+				AFE1CD4DD52F2A2F6D682C612473235F /* Headers */,
+				C5C7BF7AA3F09B0EECD6C11A3B1062EB /* Sources */,
+				EA9EC59E1E52038A8999F23132736850 /* Frameworks */,
+				FCDE1300139E840F841CB9193BF2936B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A64F814B20F380A9CCE9DF425E0D8251 /* PBXTargetDependency */,
+				4C89C45372E225589D5ED0909E0152FA /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftNotes";
+			productName = "Pods-SwiftNotes";
+			productReference = 3CE3322DBAE3585C1F8DD69DA78B7826 /* Pods_SwiftNotes.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -330,25 +525,19 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = DC1E5B2ABF35051560EE2A367FFD5C15 /* Products */;
+			productRefGroup = 40A6EDB9DAE229CFA807F26035035BDA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				66F7B49B8DD95A2761EC3942163114CA /* Apollo */,
 				ADD9F3DD47C12F0136E3ED7EE7141BA4 /* FontAwesome.swift */,
 				46FC65AF474F3F02F99ABF2F8F1CE850 /* FontAwesome.swift-FontAwesome.swift */,
-				99BC79330AF8E490CFAD302F0E52F8CC /* Pods-SwiftNotes */,
+				EC91053E18045562490DA5C26ADD9AB2 /* Pods-SwiftNotes */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2928DA9BF5CEECE2E3A1808DB48E4CCB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7512763882CF1F5620ED6284BCC635D2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -356,6 +545,15 @@
 				EF96B616BE75A442019963B01D73D91C /* Font Awesome 5 Brands-Regular-400.otf in Resources */,
 				D28A7A864BAD82F9F7EB2E84B03D3AEB /* Font Awesome 5 Free-Regular-400.otf in Resources */,
 				70B81B938724ACD63F905A070523E07C /* Font Awesome 5 Free-Solid-900.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9444D1B7E61974C40BB0DDF9FAAECF38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12073714D4B9A5A4DDEEAC70E95598ED /* check-and-run-apollo-cli.sh in Resources */,
+				F47B1CF7A84B9AC95BE82B85FCD51875 /* check-and-run-apollo-codegen.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,14 +565,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FCDE1300139E840F841CB9193BF2936B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0F078357F25A8AEB54C992530542D861 /* Sources */ = {
+		15E0BE80A78F22BF06D51B41A0FCF358 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42C5606C32851777F8982AD3A13E1B48 /* Pods-SwiftNotes-dummy.m in Sources */,
+				5DD508B84F7DEA99B791CB2E17CF5EB9 /* Apollo-dummy.m in Sources */,
+				385944ED75FC3D88B5326FE40191CDF1 /* ApolloClient.swift in Sources */,
+				8B3E46B6F346E77C92A29EBA208D9C1C /* ApolloStore.swift in Sources */,
+				DFBE29E8C7B0CA46C67B5EE471C14345 /* AsynchronousOperation.swift in Sources */,
+				7CD488AFDA1020EFEB695E3280AB093F /* Collections.swift in Sources */,
+				A715063AD164380F8F2BBE740A5AEEA4 /* DataLoader.swift in Sources */,
+				1FB3D4DA729953FAE2C901079A073271 /* GraphQLDependencyTracker.swift in Sources */,
+				D9055B8383E70143C5C4893F81F4CC10 /* GraphQLError.swift in Sources */,
+				2287431572FF0AE49B0F6C039CB4BD0B /* GraphQLExecutor.swift in Sources */,
+				DDAFDB8E73570BC455803B745986078E /* GraphQLInputValue.swift in Sources */,
+				EEF89970001325E997702F644431B726 /* GraphQLOperation.swift in Sources */,
+				B774D1A2F7279E5A67FDEA48D94B174E /* GraphQLQueryWatcher.swift in Sources */,
+				0E867EB8986044D6C07318B51083928E /* GraphQLResponse.swift in Sources */,
+				F4C8613E83560E094C4709E013BD8D5B /* GraphQLResponseGenerator.swift in Sources */,
+				7BCEDC9453AEC1FA6E38EE01726B6332 /* GraphQLResult.swift in Sources */,
+				4665A449B5253A5B7A1AA9AC10A9FC3C /* GraphQLResultAccumulator.swift in Sources */,
+				471A43A3FEB09F4AEE501F6DEE6E322F /* GraphQLResultNormalizer.swift in Sources */,
+				38BDB523D585551104060370E27B30D5 /* GraphQLSelectionSet.swift in Sources */,
+				74A35F1A11B897835F7A78102B0DDBDE /* GraphQLSelectionSetMapper.swift in Sources */,
+				FB119566F6BBE1F02A1264D948729013 /* HTTPNetworkTransport.swift in Sources */,
+				F553ED8318A340D723D4F360BF6E9407 /* InMemoryNormalizedCache.swift in Sources */,
+				456A382E93DA39385A01BE5767D8C919 /* JSON.swift in Sources */,
+				5AC7A4A7EAF0BA1CA39CB46802C59262 /* JSONSerializationFormat.swift in Sources */,
+				83010A493C118B36DDDA11944B8D01C4 /* JSONStandardTypeConversions.swift in Sources */,
+				93CFC381C425290D86AE4B7C9BC2F585 /* Locking.swift in Sources */,
+				0A263CAD47D541BEEF3B4F0928D3E209 /* NetworkTransport.swift in Sources */,
+				867265AD7B942722347BBEF97E90EF0C /* NormalizedCache.swift in Sources */,
+				A6483097FA7747F4DCFFB7BCB8425596 /* Promise.swift in Sources */,
+				FFD45FA7235213360F8FFD2193E6673A /* Record.swift in Sources */,
+				CAE5AA92A2F1D444150B5538E34A4548 /* RecordSet.swift in Sources */,
+				23043DD7316BB115E92A72E344356466 /* Result.swift in Sources */,
+				9E2CA3A71CADD07B1C58CC14B54C5A7D /* ResultOrPromise.swift in Sources */,
+				3670EE6B064E44B4B1EEA64F30615045 /* Utilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,27 +641,77 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C5C7BF7AA3F09B0EECD6C11A3B1062EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80DDDF4552F2B9C7AD3D1D7832E7A5D7 /* Pods-SwiftNotes-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4C89C45372E225589D5ED0909E0152FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FontAwesome.swift;
+			target = ADD9F3DD47C12F0136E3ED7EE7141BA4 /* FontAwesome.swift */;
+			targetProxy = 90F1E62A3D85B35DFBAEC1551B5C0A34 /* PBXContainerItemProxy */;
+		};
 		97585A8A5359A16373A49A0B954DA6A1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "FontAwesome.swift-FontAwesome.swift";
 			target = 46FC65AF474F3F02F99ABF2F8F1CE850 /* FontAwesome.swift-FontAwesome.swift */;
 			targetProxy = 452402FFF162D089FBA2F3A1D806D4C8 /* PBXContainerItemProxy */;
 		};
-		BBD3E7B1DD8277D7518F81623095AEAF /* PBXTargetDependency */ = {
+		A64F814B20F380A9CCE9DF425E0D8251 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FontAwesome.swift;
-			target = ADD9F3DD47C12F0136E3ED7EE7141BA4 /* FontAwesome.swift */;
-			targetProxy = 8F1954A197925354FC6747278DE2AF20 /* PBXContainerItemProxy */;
+			name = Apollo;
+			target = 66F7B49B8DD95A2761EC3942163114CA /* Apollo */;
+			targetProxy = 24567154531DECF9BB92DE93EBE422A1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		039C050E7297BEF832AC6DE3CF96A035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D42C2B987D53E106972848BCD603280 /* Apollo.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Apollo/Apollo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Apollo/Apollo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Apollo/Apollo.modulemap";
+				PRODUCT_MODULE_NAME = Apollo;
+				PRODUCT_NAME = Apollo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		0C050E9000529F1AE72EC9D676BBFDAB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F94406FEEB7E6DE0945FD874C5D55C4 /* FontAwesome.swift.xcconfig */;
+			baseConfigurationReference = B0B62A638BAAB9AF8215248017BE01B4 /* FontAwesome.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FontAwesome.swift";
@@ -438,12 +725,26 @@
 			};
 			name = Debug;
 		};
-		12FA617081C0460C9CD283FE5DA6CCA1 /* Release */ = {
+		38D5FA5AEE5DB9DFEA63B6A5B5210A3C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 30B1D137A62A99E28B3FC7032D586D8E /* Pods-SwiftNotes.release.xcconfig */;
+			baseConfigurationReference = B0B62A638BAAB9AF8215248017BE01B4 /* FontAwesome.swift.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FontAwesome.swift";
+				INFOPLIST_FILE = "Target Support Files/FontAwesome.swift/ResourceBundle-FontAwesome.swift-FontAwesome.swift-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = FontAwesome.swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		3B67FF1F41E1211BAD2DF8CE587E7615 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0B62A638BAAB9AF8215248017BE01B4 /* FontAwesome.swift.xcconfig */;
+			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -453,31 +754,29 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SwiftNotes/Pods-SwiftNotes-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FontAwesome.swift/FontAwesome.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FontAwesome.swift/FontAwesome.swift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SwiftNotes/Pods-SwiftNotes.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/FontAwesome.swift/FontAwesome.swift.modulemap";
+				PRODUCT_MODULE_NAME = FontAwesome_swift;
+				PRODUCT_NAME = FontAwesome_swift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		31711B3DB2DD72D99702C26488E67977 /* Debug */ = {
+		9DD05CCE9E02673FC15E659735020160 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 09BEC3D4D90E11E3EC5036E67E3EA77F /* Pods-SwiftNotes.debug.xcconfig */;
 			buildSettings = {
@@ -509,57 +808,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		38D5FA5AEE5DB9DFEA63B6A5B5210A3C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F94406FEEB7E6DE0945FD874C5D55C4 /* FontAwesome.swift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FontAwesome.swift";
-				INFOPLIST_FILE = "Target Support Files/FontAwesome.swift/ResourceBundle-FontAwesome.swift-FontAwesome.swift-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = FontAwesome.swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		3B67FF1F41E1211BAD2DF8CE587E7615 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F94406FEEB7E6DE0945FD874C5D55C4 /* FontAwesome.swift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FontAwesome.swift/FontAwesome.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FontAwesome.swift/FontAwesome.swift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/FontAwesome.swift/FontAwesome.swift.modulemap";
-				PRODUCT_MODULE_NAME = FontAwesome_swift;
-				PRODUCT_NAME = FontAwesome_swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -625,6 +873,80 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
+		};
+		B033C4A62CCF612324E65012DE1DFE05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30B1D137A62A99E28B3FC7032D586D8E /* Pods-SwiftNotes.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftNotes/Pods-SwiftNotes-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftNotes/Pods-SwiftNotes.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BEE07B916FE7427F28736A1BC26E3FBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D42C2B987D53E106972848BCD603280 /* Apollo.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Apollo/Apollo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Apollo/Apollo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Apollo/Apollo.modulemap";
+				PRODUCT_MODULE_NAME = Apollo;
+				PRODUCT_NAME = Apollo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		C1391485F05B41BD35738A433056B7FA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -692,7 +1014,7 @@
 		};
 		F7E1D22AE2A8C8656253CBE499872A84 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F94406FEEB7E6DE0945FD874C5D55C4 /* FontAwesome.swift.xcconfig */;
+			baseConfigurationReference = B0B62A638BAAB9AF8215248017BE01B4 /* FontAwesome.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -729,6 +1051,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		343D63B6DB5A1E945176456AAC94CACE /* Build configuration list for PBXNativeTarget "Apollo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE07B916FE7427F28736A1BC26E3FBF /* Debug */,
+				039C050E7297BEF832AC6DE3CF96A035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		41C253EBFE15226002761A36F667557C /* Build configuration list for PBXNativeTarget "FontAwesome.swift-FontAwesome.swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -747,11 +1078,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		91DA629AF7BB526037D140A3968658C3 /* Build configuration list for PBXNativeTarget "Pods-SwiftNotes" */ = {
+		9BBC44137AE72EF9C1E83D6E8F64F18F /* Build configuration list for PBXNativeTarget "Pods-SwiftNotes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				31711B3DB2DD72D99702C26488E67977 /* Debug */,
-				12FA617081C0460C9CD283FE5DA6CCA1 /* Release */,
+				9DD05CCE9E02673FC15E659735020160 /* Debug */,
+				B033C4A62CCF612324E65012DE1DFE05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

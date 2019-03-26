@@ -1,16 +1,22 @@
 PODS:
+  - Apollo (0.9.5):
+    - Apollo/Core (= 0.9.5)
+  - Apollo/Core (0.9.5)
   - FontAwesome.swift (1.6.0)
 
 DEPENDENCIES:
+  - Apollo
   - FontAwesome.swift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Apollo
     - FontAwesome.swift
 
 SPEC CHECKSUMS:
+  Apollo: 19caf3246d292bbb69ecad1bd098661f78222aba
   FontAwesome.swift: 71a422e7b209ee940c7c21a5d13964ecf2897ca4
 
-PODFILE CHECKSUM: 894776854e8769801b388a690caff136654aeb6b
+PODFILE CHECKSUM: 7f97a4b07e99502ffc663c5bf2b117c9e154b7bf
 
 COCOAPODS: 1.6.1

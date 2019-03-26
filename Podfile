@@ -7,4 +7,5 @@ target 'SwiftNotes' do
 
   # Pods for SwiftNotes
   pod 'FontAwesome.swift'
+  pod 'Apollo'
 end
