@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9B3FFC94C64FE83F26C2D70F /* Pods_SwiftNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A87A4E7131727F8E34B4388 /* Pods_SwiftNotes.framework */; };
+		B526D1CD224A05F90022887E /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = B526D1CC224A05F90022887E /* schema.json */; };
 		B5A269F9223CB5880034362E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A269F8223CB5880034362E /* AppDelegate.swift */; };
 		B5A269FB223CB5880034362E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A269FA223CB5880034362E /* ViewController.swift */; };
 		B5A269FE223CB5880034362E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A269FC223CB5880034362E /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		7CC81E605B018E902B5D2B89 /* Pods-SwiftNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNotes.debug.xcconfig"; path = "Target Support Files/Pods-SwiftNotes/Pods-SwiftNotes.debug.xcconfig"; sourceTree = "<group>"; };
 		9A87A4E7131727F8E34B4388 /* Pods_SwiftNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B526D1CC224A05F90022887E /* schema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		B5A269F5223CB5880034362E /* SwiftNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A269F8223CB5880034362E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5A269FA223CB5880034362E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				B5A26A04223CB58B0034362E /* Info.plist */,
 				B5A26A0A223CB7FF0034362E /* NotesController.swift */,
 				B5A26A0C22435D830034362E /* ComposeController.swift */,
+				B526D1CC224A05F90022887E /* schema.json */,
 			);
 			path = SwiftNotes;
 			sourceTree = "<group>";
@@ -106,6 +109,7 @@
 			buildConfigurationList = B5A26A07223CB58B0034362E /* Build configuration list for PBXNativeTarget "SwiftNotes" */;
 			buildPhases = (
 				71567FC734F81A70EA3E24E4 /* [CP] Check Pods Manifest.lock */,
+				B5DEF7BA224A08FB00B5911A /* Generate Apollo GraphQL API */,
 				B5A269F1223CB5880034362E /* Sources */,
 				B5A269F2223CB5880034362E /* Frameworks */,
 				B5A269F3223CB5880034362E /* Resources */,
@@ -158,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B526D1CD224A05F90022887E /* schema.json in Resources */,
 				B5A26A03223CB58B0034362E /* LaunchScreen.storyboard in Resources */,
 				B5A26A00223CB58B0034362E /* Assets.xcassets in Resources */,
 				B5A269FE223CB5880034362E /* Main.storyboard in Resources */,
@@ -212,6 +217,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B5DEF7BA224A08FB00B5911A /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-cli.sh codegen:generate --queries=\"$(find . -name '*.graphql')\" --schema=schema.json API.swift\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
