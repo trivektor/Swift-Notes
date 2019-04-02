@@ -9,14 +9,19 @@
 import Foundation
 import UIKit
 import FontAwesome_swift
+import Apollo
 
 class NotesController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var itemsToLoad : [String] = [];
     var notesTableView = UITableView()
+    var notes: [AllNotesQuery.Data.Note]? {
+        didSet {
+            notesTableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        itemsToLoad.append(contentsOf: ["One", "Two", "Three", "Four", "Five"])
         self.title = "Notes"
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(
             title: String.fontAwesomeIcon(name: .edit),
@@ -28,6 +33,8 @@ class NotesController: UIViewController, UITableViewDataSource, UITableViewDeleg
             NSAttributedString.Key.font: UIFont.fontAwesome(ofSize: 16, style: .solid),
             NSAttributedString.Key.foregroundColor: UIColor.black
         ], for: UIControl.State.normal)
+        
+        fetchNotes()
     }
     
     @objc public func compose() {
@@ -36,6 +43,7 @@ class NotesController: UIViewController, UITableViewDataSource, UITableViewDeleg
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        print("View will appear")
         super.viewWillAppear(animated)
         
         let screenSize = UIScreen.main.bounds
@@ -49,17 +57,25 @@ class NotesController: UIViewController, UITableViewDataSource, UITableViewDeleg
         notesTableView.register(UITableViewCell.self, forCellReuseIdentifier: "notesCell")
         
         self.view.addSubview(notesTableView)
+        
+        fetchNotes()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return itemsToLoad.count
+        return notes?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "notesCell", for: indexPath)
         
-        cell.textLabel?.text = itemsToLoad[indexPath.row]
+        cell.textLabel?.text = notes?[indexPath.row].body
         
         return cell
+    }
+    
+    func fetchNotes() {
+        apollo.fetch(query: AllNotesQuery(), cachePolicy: .fetchIgnoringCacheData) { (result, error) in
+            self.notes = result?.data?.notes
+        }
     }
 }

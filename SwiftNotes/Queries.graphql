@@ -1,0 +1,14 @@
+query AllNotes {
+    notes {
+        body
+    }
+}
+
+mutation CreateNote($input: CreateNoteInput!) {
+    createNote(input: $input) {
+        note {
+            id
+            body
+        }
+    }
+}

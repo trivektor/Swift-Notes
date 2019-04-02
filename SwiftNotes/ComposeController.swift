@@ -25,4 +25,9 @@ class ComposeController: UIViewController, UITextFieldDelegate, UITextViewDelega
         textField.autocorrectionType = .no
         self.view.addSubview(textField)
     }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        let body = CreateNoteInput(body: textView.text)
+        apollo.perform(mutation: CreateNoteMutation(input: body))
+    }
 }

@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import Apollo
+
+let apollo = ApolloClient(url: URL(string: "http://127.0.0.1:3000/graphql")!)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
