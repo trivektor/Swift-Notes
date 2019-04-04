@@ -17,6 +17,7 @@ class NotesController: UIViewController, UITableViewDataSource, UITableViewDeleg
     var notes: [AllNotesQuery.Data.Note]? {
         didSet {
             notesTableView.reloadData()
+            notesTableView.refreshControl?.endRefreshing()
         }
     }
     
@@ -43,7 +44,6 @@ class NotesController: UIViewController, UITableViewDataSource, UITableViewDeleg
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print("View will appear")
         super.viewWillAppear(animated)
         
         let screenSize = UIScreen.main.bounds
@@ -56,8 +56,18 @@ class NotesController: UIViewController, UITableViewDataSource, UITableViewDeleg
         
         notesTableView.register(UITableViewCell.self, forCellReuseIdentifier: "notesCell")
         
+        let refreshControl = UIRefreshControl()
+        
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(refreshNotesData), for: .valueChanged)
+        notesTableView.refreshControl = refreshControl
+
         self.view.addSubview(notesTableView)
         
+        fetchNotes()
+    }
+    
+    @objc private func refreshNotesData(_ sender: Any) {
         fetchNotes()
     }
     

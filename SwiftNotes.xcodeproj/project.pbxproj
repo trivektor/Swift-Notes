@@ -17,6 +17,10 @@
 		B5A26A0B223CB7FF0034362E /* NotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A26A0A223CB7FF0034362E /* NotesController.swift */; };
 		B5A26A0D22435D830034362E /* ComposeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A26A0C22435D830034362E /* ComposeController.swift */; };
 		B5C2689C2246103600B211DB /* FontAwesome_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C2689B2246103600B211DB /* FontAwesome_swift.framework */; };
+		B5CFC49E224F4FD500A537C6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CFC49D224F4FD500A537C6 /* API.swift */; };
+		B5CFC4A0224F544900A537C6 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CFC49F224F544900A537C6 /* Note.swift */; };
+		B5DEF7BC224F386600B5911A /* ApolloInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DEF7BB224F386600B5911A /* ApolloInstance.swift */; };
+		B5DEF7BE224F392700B5911A /* Queries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = B5DEF7BD224F392700B5911A /* Queries.graphql */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 		B5A26A0A223CB7FF0034362E /* NotesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesController.swift; sourceTree = "<group>"; };
 		B5A26A0C22435D830034362E /* ComposeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeController.swift; sourceTree = "<group>"; };
 		B5C2689B2246103600B211DB /* FontAwesome_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FontAwesome_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5CFC49D224F4FD500A537C6 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B5CFC49F224F544900A537C6 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		B5DEF7BB224F386600B5911A /* ApolloInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloInstance.swift; sourceTree = "<group>"; };
+		B5DEF7BD224F392700B5911A /* Queries.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Queries.graphql; sourceTree = "<group>"; };
 		C926EAD4BAD2E9A2E4E98E6C /* Pods-SwiftNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNotes.release.xcconfig"; path = "Target Support Files/Pods-SwiftNotes/Pods-SwiftNotes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +96,7 @@
 		B5A269F7223CB5880034362E /* SwiftNotes */ = {
 			isa = PBXGroup;
 			children = (
+				B5CFC49D224F4FD500A537C6 /* API.swift */,
 				B5A269F8223CB5880034362E /* AppDelegate.swift */,
 				B5A269FA223CB5880034362E /* ViewController.swift */,
 				B5A269FC223CB5880034362E /* Main.storyboard */,
@@ -97,6 +106,9 @@
 				B5A26A0A223CB7FF0034362E /* NotesController.swift */,
 				B5A26A0C22435D830034362E /* ComposeController.swift */,
 				B526D1CC224A05F90022887E /* schema.json */,
+				B5DEF7BB224F386600B5911A /* ApolloInstance.swift */,
+				B5DEF7BD224F392700B5911A /* Queries.graphql */,
+				B5CFC49F224F544900A537C6 /* Note.swift */,
 			);
 			path = SwiftNotes;
 			sourceTree = "<group>";
@@ -163,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B526D1CD224A05F90022887E /* schema.json in Resources */,
+				B5DEF7BE224F392700B5911A /* Queries.graphql in Resources */,
 				B5A26A03223CB58B0034362E /* LaunchScreen.storyboard in Resources */,
 				B5A26A00223CB58B0034362E /* Assets.xcassets in Resources */,
 				B5A269FE223CB5880034362E /* Main.storyboard in Resources */,
@@ -245,8 +258,11 @@
 			files = (
 				B5A26A0D22435D830034362E /* ComposeController.swift in Sources */,
 				B5A269FB223CB5880034362E /* ViewController.swift in Sources */,
+				B5CFC4A0224F544900A537C6 /* Note.swift in Sources */,
 				B5A26A0B223CB7FF0034362E /* NotesController.swift in Sources */,
 				B5A269F9223CB5880034362E /* AppDelegate.swift in Sources */,
+				B5CFC49E224F4FD500A537C6 /* API.swift in Sources */,
+				B5DEF7BC224F386600B5911A /* ApolloInstance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
